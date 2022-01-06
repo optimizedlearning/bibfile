@@ -1,0 +1,182 @@
+
+\usepackage{amsmath,amscd,amssymb,amsthm}
+%\newtheorem{Theorem}{Theorem}%[section]
+%\newtheorem{Lemma}[theorem]{Lemma}
+%\newtheorem{Corollary}[theorem]{Corollary}
+%\newtheorem{Proposition}[theorem]{Proposition}
+%\newtheorem{Definition}[theorem]{Definition}
+\usepackage{verbatim}
+\usepackage{thmtools}
+\usepackage{thm-restate}
+
+
+\declaretheorem[name=Theorem]{Theorem}
+\declaretheorem[name=Proposition, numberlike=Theorem]{Proposition}
+\declaretheorem[name=Lemma, numberlike=Theorem]{Lemma}
+\declaretheorem[sibling=Theorem]{Definition}
+\declaretheorem[sibling=Theorem]{Corollary}
+\declaretheorem[sibling=Theorem]{Question}
+\declaretheorem[sibling=Theorem]{Goal}
+
+\usepackage{enumerate}
+\usepackage{mathtools}
+% \usepackage{amsmath,amscd,amssymb,amsthm}
+% \usepackage{thmtools}
+% \usepackage{amssymb}
+\usepackage{epsfig}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{epic}
+% \usepackage{psfrag}
+% \usepackage{pstricks}
+\usepackage{eepic}
+\usepackage{ifthen}
+% \usepackage{theorem}
+% \usepackage{verbatim}
+\usepackage{amsfonts}
+\usepackage{wasysym}
+\usepackage{color}
+\usepackage{setspace}
+\usepackage{booktabs}
+% \usepackage{todonotes}
+\usepackage{diagbox}
+\usepackage{thm-restate}
+%%\usepackage[scaled]{uarial10}
+
+%\setstretch{0.98}
+
+%\usepackage{times}
+% \usepackage{newtxtext,newtxmath}
+%\usepackage[scaled]{uarial10}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usetikzlibrary{shapes}
+
+\usepackage{subfig,wrapfig}
+\usepackage[margin=1in]{geometry}
+
+% \providecommand{\U}[1]{\protect\rule{.1in}{.1in}}
+% \providecommand{\U}[1]{\protect\rule{.1in}{.1in}}
+% \renewcommand{\familydefault}{\sfdefault}
+% \setlength{\marginparsep}{0in}
+% \setlength{\marginparwidth}{0in}
+% \setlength{\headheight}{0in}
+% \setlength{\headsep}{0in}
+% \setlength{\marginparpush}{0in}
+% \setlength{\oddsidemargin}{0in}
+% \setlength{\evensidemargin}{0in}
+% \setlength{\textwidth}{6.5in}
+% \setlength{\topmargin}{0in}
+% \setlength{\textheight}{9in}
+% \addtolength{\topmargin}{-\headheight}
+% \addtolength{\topmargin}{-\headsep}
+
+\newcommand{\bzero}{{\mathbf{0}}}
+\newcommand{\be}[1]{\begin{equation}\label{#1}}
+\newcommand{\scrR}{{\cal R}}
+\newcommand{\bmu}{\boldsymbol{\mu}}
+\newcommand{\blambda}{\boldsymbol{\lambda}}
+\newcommand{\scrS}{{\cal S}}
+\def\bx{{\mathbf x}}
+\def\bb{{\mathbf b}}
+\def\bc{{\mathbf c}}
+\def\bA{{\mathbf A}}
+\def\bN{{\mathbf N}}
+\def\bw{{\mathbf w}}
+\def\bW{{\mathbf W}}
+\def\bd{{\mathbf d}}
+\newcommand{\scrA}{\mathcal{A}}
+\newcommand{\scrB}{\mathcal{B}}
+\newcommand{\scrN}{\mathcal{N}}
+\newcommand{\scrG}{\mathcal{G}}
+\newcommand{\scrV}{\mathcal{V}}
+\newcommand{\scrW}{\mathcal{W}}
+\newcommand{\scrF}{\mathcal{F}}
+\newcommand{\bGamma}{\boldsymbol{\Gamma}}
+\newcommand{\bbeta}{\boldsymbol{\beta}}
+\def\bm{{\mathbf m}}
+\newcommand{\btheta}{\boldsymbol{\theta}}
+\newcommand{\mbb}{\mathbb}
+\newcommand{\tsum}{\textstyle\sum}
+\newcommand{\vel}{\varphi}
+\newcommand{\trA}{A}
+\newcommand{\trB}{B}
+\newcommand{\cl}{C}
+\newcommand{\ga}{G}
+\newcommand{\Pair}[2]{\boldsymbol{[\kern-.18em[}#1,#2\boldsymbol{]\kern-.18em]}}
+\newcommand{\length}[1]{\boldsymbol{|}#1\boldsymbol{|}}
+\newcommand{\clusters}[1]{\textsf{clusters}(#1)}
+\newcommand{\gaps}[1]{\textsf{gaps}(#1)}
+\newcommand{\substring}[2]{#1 \leq #2}
+\newcommand{\prefix}[2]{#1 \trianglelefteq #2}
+\newcommand{\density}[1]{\textsf{{density}}(#1)}
+\newcommand{\momentum}[1]{\textsf{{momentum}}(#1)}
+\newcommand{\energy}[1]{\textsf{{energy}}(#1)}
+\newcommand{\tc}{\textcolor}
+\newcommand{\tcr}[1]{\tc{red}{#1}}
+\newcommand{\tcb}[1]{\tc{blue}{#1}}
+
+\usepackage[sorting=none, defernumbers=true, backend=biber, maxbibnames=99]{biblatex} % load the package
+\addbibresource{references.bib}
+\newcommand{\citet}[1]{\textcite{#1}}
+
+% \newcommand{\sectionlike}[1]{\textbf{\large #1}}
+
+% \makeatletter
+% \renewenvironment{thebibliography}[1]
+% {\section*{\bibname
+% \@mkboth{\MakeUppercase\bibname}{\MakeUppercase\bibname}}      \list{\@biblabel{\@arabic\c@enumiv}}           {\settowidth\labelwidth{\@biblabel{#1}}            \leftmargin\labelwidth
+% \advance\leftmargin\labelsep
+% \@openbib@code
+% \usecounter{enumiv}            \let\p@enumiv\@empty
+% \renewcommand\theenumiv{\@arabic\c@enumiv}}      \sloppy
+% \clubpenalty4000
+% \@clubpenalty \clubpenalty
+% \widowpenalty4000      \sfcode`\.\@m}
+% \makeatother
+% \addtocounter{secnumdepth}{1}
+% \setcounter{tocdepth}{3}
+% \renewcommand{\thesection}{D.\arabic{section}}
+% \renewcommand{\contentsname}{C. Contents}
+% \renewcommand{\bibname}{E. References}
+% \renewcommand{\thefigure}{\arabic{figure}}
+% \renewcommand{\theequation}{\arabic{equation}}
+% \renewcommand{\thetable}{\arabic{table}}
+% \definecolor{BrickRed}{rgb}{0.6,0,0}
+% \def\cl#1{{\color{BrickRed} #1}}
+% \definecolor{deepBlue}{rgb}{0,0,0.6}
+% \def\dw#1{{\color{deepBlue} #1}}
+
+% \newcommand{\until[1]}{\mathcal{U}_{[#1)}}
+% \newcommand{\even[1]}{\diamondsuit_{[#1)}}
+% \newcommand{\alw[1]}{\square_{[#1)}}
+% \newcommand{\La}{\mathcal{L}}
+
+
+\renewcommand{\L}{\mathcal{L}}
+\newcommand{\E}{\mathop{\mathbb{E}}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\argmin}{\mathop{\text{argmin}}}
+\newcommand{\regret}{\text{Regret}}
+\newcommand{\dynamicregret}{\text{DynamicRegret}}
+\newcommand{\by}{\mathbf{y}}
+\newcommand{\bg}{\mathbf{g}}
+\newcommand{\bu}{\mathbf{u}}
+\newcommand{\bX}{\mathcal{X}}
+\newcommand{\bY}{\mathcal{Y}}
+\newcommand{\bZ}{\mathcal{Z}}
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\X}{\bX}
+\newcommand{\Y}{\bY}
+%\usepackage{subfigure} 
+
+% Proof environments
+% The Theorems are numbered consecutively
+% Lemmas are numbered by section, and observations, claims, facts, and 
+% assumptions take their numbering. Propositions and definitions have their
+% own numbering by section.
+% \newtheorem{theorem}{Theorem}[section]
