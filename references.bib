@@ -6449,3 +6449,191 @@ howpublished={\url{https://github.com/google/differential-privacy}}
   year={1986},
   publisher={Nature Publishing Group}
 }
+
+@inproceedings{mironov2017renyi,
+  title={R{\'e}nyi differential privacy},
+  author={Mironov, Ilya},
+  booktitle={2017 IEEE 30th Computer Security Foundations Symposium (CSF)},
+  pages={263--275},
+  year={2017},
+  organization={IEEE}
+}
+
+@book{tu2017differential,
+  title={Differential geometry: connections, curvature, and characteristic classes},
+  author={Tu, Loring W},
+  volume={275},
+  year={2017},
+  publisher={Springer}
+}
+
+@book{tu2011introduction,
+  title={An introduction to manifolds},
+  author={Loring W.. Tu},
+  year={2011},
+  publisher={Springer.}
+}
+
+@book{bott1982differential,
+  title={Differential forms in algebraic topology},
+  author={Bott, Raoul and Tu, Loring W and others},
+  volume={82},
+  year={1982},
+  publisher={Springer}
+}
+
+@inproceedings{daniely2015strongly,
+  title={Strongly adaptive online learning},
+  author={Daniely, Amit and Gonen, Alon and Shalev-Shwartz, Shai},
+  booktitle={International Conference on Machine Learning},
+  pages={1405--1411},
+  year={2015},
+  organization={PMLR}
+}
+@article{chaudhuri2011differentially,
+  title={Differentially private empirical risk minimization.},
+  author={Chaudhuri, Kamalika and Monteleoni, Claire and Sarwate, Anand D},
+  journal={Journal of Machine Learning Research},
+  volume={12},
+  number={3},
+  year={2011}
+}
+@inproceedings{bassily2014private,
+  title={Private empirical risk minimization: Efficient algorithms and tight error bounds},
+  author={Bassily, Raef and Smith, Adam and Thakurta, Abhradeep},
+  booktitle={2014 IEEE 55th Annual Symposium on Foundations of Computer Science},
+  pages={464--473},
+  year={2014},
+  organization={IEEE}
+}
+
+@InProceedings{pmlr-v23-kifer12,
+  title = 	 {Private Convex Empirical Risk Minimization and High-dimensional Regression},
+  author = 	 {Kifer, Daniel and Smith, Adam and Thakurta, Abhradeep},
+  booktitle = 	 {Proceedings of the 25th Annual Conference on Learning Theory},
+  pages = 	 {25.1--25.40},
+  year = 	 {2012},
+  editor = 	 {Mannor, Shie and Srebro, Nathan and Williamson, Robert C.},
+  volume = 	 {23},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Edinburgh, Scotland},
+  month = 	 {25--27 Jun},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v23/kifer12/kifer12.pdf},
+  url = 	 {https://proceedings.mlr.press/v23/kifer12.html},
+  abstract = 	 {We consider \emphdifferentially private algorithms for convex empirical risk minimization (ERM). Differential privacy (Dwork et al., 2006b) is a recently introduced notion of privacy which guarantees that an algorithm’s output does not depend on the data of any individual in the dataset. This is crucial in fields that handle sensitive data, such as genomics, collaborative filtering, and economics. Our motivation is the design of private algorithms for sparse learning problems, in which one aims to find solutions (e.g., regression parameters) with few non-zero coefficients. To this end: (a) We significantly extend the analysis of the “objective perturbation” algorithm of Chaudhuri et al. (2011) for convex ERM problems. We show that their method can be modified to use less noise (be more accurate), and to apply to problems with hard constraints and non-differentiable regularizers. We also give a tighter, data-dependent analysis of the additional error introduced by their method. A key tool in our analysis is a new nontrivial limit theorem for differential privacy which is of independent interest: if a sequence of differentially private algorithms converges, in a \emphweak sense, then the limit algorithm is also differentially private. In particular, our methods give the best known algorithms for differentially private linear regression. These methods work in settings where the number of parameters p is less than the number of samples n. (b) We give the first two private algorithms for \emphsparse regression problems in high-dimensional settings, where p is much larger than n. We analyze their performance for linear regression: under standard assumptions on the data, our algorithms have vanishing empirical risk for n = poly(s, \log p) when there exists a good regression vector with s nonzero coefficients. Our algorithms demonstrate that randomized algorithms for sparse regression problems can be both stable and accurate - a combination which is impossible for deterministic algorithms.}
+}
+
+@INPROCEEDINGS{6736861,
+  author={Song, Shuang and Chaudhuri, Kamalika and Sarwate, Anand D.},
+  booktitle={2013 IEEE Global Conference on Signal and Information Processing}, 
+  title={Stochastic gradient descent with differentially private updates}, 
+  year={2013},
+  volume={},
+  number={},
+  pages={245-248},
+  doi={10.1109/GlobalSIP.2013.6736861}}
+ 
+ 
+@InProceedings{pmlr-v32-jain14,
+  title = 	 {(Near) Dimension Independent Risk Bounds for Differentially Private Learning},
+  author = 	 {Jain, Prateek and Thakurta, Abhradeep Guha},
+  booktitle = 	 {Proceedings of the 31st International Conference on Machine Learning},
+  pages = 	 {476--484},
+  year = 	 {2014},
+  editor = 	 {Xing, Eric P. and Jebara, Tony},
+  volume = 	 {32},
+  number =       {1},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Bejing, China},
+  month = 	 {22--24 Jun},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v32/jain14.pdf},
+  url = 	 {https://proceedings.mlr.press/v32/jain14.html},
+  abstract = 	 {In this paper, we study the problem of differentially private risk minimization where the goal is to provide differentially private algorithms that have small excess risk. In particular we address the following open problem: \emphIs it possible to design computationally efficient differentially private risk minimizers with  excess risk bounds that do not explicitly depend on dimensionality (p) and do not require  structural assumptions like restricted strong convexity?  In this paper, we answer the question in the affirmative for a variant of the well-known  \emphoutput and \emphobjective perturbation algorithms [Chaudhuri et al., 2011]. In particular, we show that  in generalized linear model, variants of both output and objective perturbation algorithms have no \em explicit dependence on p. Our results assume that the underlying loss function is a 1-Lipschitz convex function and we show that the excess risk depends only on  L_2 norm of the true risk minimizer and that of training points.  Next, we present a novel privacy preserving algorithm for risk minimization over simplex in the generalized linear model, where the loss function is  a doubly differentiable convex function. Assuming that the training points have bounded L_∞-norm, our algorithm provides risk bound that has only \em logarithmic dependence on p. We also apply our technique to the online learning setting and obtain a regret bound with similar logarithmic dependence on p. In contrast, the existing differentially private online learning methods incur O(\sqrtp)  dependence.}
+}
+@inproceedings{NIPS2015_52d080a3,
+ author = {Talwar, Kunal and Guha Thakurta, Abhradeep and Zhang, Li},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {C. Cortes and N. Lawrence and D. Lee and M. Sugiyama and R. Garnett},
+ pages = {},
+ publisher = {Curran Associates, Inc.},
+ title = {Nearly Optimal Private LASSO},
+ url = {https://proceedings.neurips.cc/paper/2015/file/52d080a3e172c33fd6886a37e7288491-Paper.pdf},
+ volume = {28},
+ year = {2015}
+}
+
+@inproceedings{wu2017bolt,
+  title={Bolt-on differential privacy for scalable stochastic gradient descent-based analytics},
+  author={Wu, Xi and Li, Fengan and Kumar, Arun and Chaudhuri, Kamalika and Jha, Somesh and Naughton, Jeffrey},
+  booktitle={Proceedings of the 2017 ACM International Conference on Management of Data},
+  pages={1307--1322},
+  year={2017}
+}
+
+@InProceedings{pmlr-v89-chen19e,
+  title = 	 {Renyi Differentially Private ERM for Smooth Objectives},
+  author =       {Chen, Chen and Lee, Jaewoo and Kifer, Dan},
+  booktitle = 	 {Proceedings of the Twenty-Second International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {2037--2046},
+  year = 	 {2019},
+  editor = 	 {Chaudhuri, Kamalika and Sugiyama, Masashi},
+  volume = 	 {89},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {16--18 Apr},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v89/chen19e/chen19e.pdf},
+  url = 	 {https://proceedings.mlr.press/v89/chen19e.html},
+  abstract = 	 {In this paper, we present a Renyi Differentially Private stochastic gradient descent (SGD) algorithm for convex empirical risk minimization. The algorithm uses output perturbation and leverages randomness inside SGD, which creates a "randomized sensitivity", in order to reduce the amount of noise that is added. One of the benefits of output perturbation is that we can incorporate a periodic averaging step that  serves to further reduce sensitivity while improving accuracy (reducing the well-known oscillating behavior of SGD near the optimum).  Renyi Differential Privacy can be used to provide (epsilon, delta)-differential privacy guarantees and hence provide a comparison with prior work. An empirical evaluation demonstrates that the proposed method outperforms prior methods on differentially private ERM.}
+}
+@article{wang2018differentially,
+  title={Differentially private empirical risk minimization revisited: Faster and more general},
+  author={Wang, Di and Ye, Minwei and Xu, Jinhui},
+  journal={arXiv preprint arXiv:1802.05251},
+  year={2018}
+}
+
+@inproceedings{song2021evading,
+  title={Evading the curse of dimensionality in unconstrained private glms},
+  author={Song, Shuang and Steinke, Thomas and Thakkar, Om and Thakurta, Abhradeep},
+  booktitle={International Conference on Artificial Intelligence and Statistics},
+  pages={2638--2646},
+  year={2021},
+  organization={PMLR}
+}
+@article{bassily2021differentially,
+  title={Differentially private stochastic optimization: New results in convex and non-convex settings},
+  author={Bassily, Raef and Guzm{\'a}n, Crist{\'o}bal and Menart, Michael},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  year={2021}
+}
+@article{kairouz2021practical,
+  title={Practical and private (deep) learning without sampling or shuffling},
+  author={Kairouz, Peter and McMahan, Brendan and Song, Shuang and Thakkar, Om and Thakurta, Abhradeep and Xu, Zheng},
+  journal={arXiv preprint arXiv:2103.00039},
+  year={2021}
+}
+@article{dwork2015generalization,
+  title={Generalization in adaptive data analysis and holdout reuse},
+  author={Dwork, Cynthia and Feldman, Vitaly and Hardt, Moritz and Pitassi, Toniann and Reingold, Omer and Roth, Aaron},
+  journal={arXiv preprint arXiv:1506.02629},
+  year={2015}
+}
+@inproceedings{dwork2015preserving,
+  title={Preserving statistical validity in adaptive data analysis},
+  author={Dwork, Cynthia and Feldman, Vitaly and Hardt, Moritz and Pitassi, Toniann and Reingold, Omer and Roth, Aaron Leon},
+  booktitle={Proceedings of the forty-seventh annual ACM symposium on Theory of computing},
+  pages={117--126},
+  year={2015}
+}
+
+@inproceedings{jun2019parameter,
+  title={Parameter-free online convex optimization with sub-exponential noise},
+  author={Jun, Kwang-Sung and Orabona, Francesco},
+  booktitle={Conference on Learning Theory},
+  pages={1802--1823},
+  year={2019},
+  organization={PMLR}
+}
