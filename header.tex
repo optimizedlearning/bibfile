@@ -14,8 +14,10 @@
 \declaretheorem[name=Lemma, numberlike=Theorem]{Lemma}
 \declaretheorem[sibling=Theorem]{Definition}
 \declaretheorem[sibling=Theorem]{Corollary}
-\declaretheorem[sibling=Theorem]{Question}
-\declaretheorem[sibling=Theorem]{Goal}
+\declaretheorem[sibling=Theorem]{Conjecture}
+\declaretheorem[name=Question]{Question}
+\declaretheorem[sibling=Question]{Goal}
+\declaretheorem[sibling=Theorem]{Example}
 
 \usepackage{enumerate}
 \usepackage{mathtools}
@@ -119,7 +121,7 @@
 \newcommand{\tcr}[1]{\tc{red}{#1}}
 \newcommand{\tcb}[1]{\tc{blue}{#1}}
 
-\usepackage[sorting=none, defernumbers=true, backend=biber, maxbibnames=99]{biblatex} % load the package
+\usepackage[sorting=none, sortcites=true,defernumbers=true, backend=biber, maxbibnames=99]{biblatex} % load the package
 \addbibresource{references.bib}
 \newcommand{\citet}[1]{\textcite{#1}}
 
@@ -155,6 +157,8 @@
 % \newcommand{\alw[1]}{\square_{[#1)}}
 % \newcommand{\La}{\mathcal{L}}
 
+
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
 
 \renewcommand{\L}{\mathcal{L}}
 \newcommand{\E}{\mathop{\mathbb{E}}}
